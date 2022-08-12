@@ -1,0 +1,12 @@
+.footer {
+  background: linear-gradient(rgba(0, 108, 196, 0.6), rgba(89, 91, 182, 0.6));
+
+  height: 137px;
+  width: 100%;
+  bottom: 0;
+
+  & > hr {
+    width: 95%;
+    background-color: $main-theme-sec-color;
+  }
+}

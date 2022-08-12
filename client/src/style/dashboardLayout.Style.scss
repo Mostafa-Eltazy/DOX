@@ -1,0 +1,59 @@
+.main-column {
+  border-right: 4px solid $main-theme-hover-color;
+  border-radius: 0.25rem;
+}
+
+.file-card {
+  border: 1px solid #494848;
+  width: 45%;
+  background-color: #d7d0bc;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 25px rgba(53, 85, 151, 0.1);
+  h6,
+  p {
+    font-family: courier;
+  }
+  span {
+    font-family: "Mukta", sans-serif;
+  }
+
+  img {
+    height: 238px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0.25px 5px 2.5px 5px;
+    background-color: #fff;
+  }
+
+  &_title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: $screen_size__md) {
+    width: 90%;
+    img {
+      width: 100%;
+    }
+  }
+  @media (max-width: $screen_size__sm) {
+    width: 90%;
+    img {
+      height: 255px;
+      width: 100%;
+    }
+  }
+}
+
+
+#header-bar {
+  display: none;
+}
+#txt-renderer {
+  overflow-wrap: break-word;
+  height: 238px;
+  @media (max-width: $screen_size__sm) {
+    width: 90%;
+  }
+}
